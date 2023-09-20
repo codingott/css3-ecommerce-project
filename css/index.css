@@ -952,3 +952,71 @@ body {
         opacity: 1;
     }
 }
+
+@media(max-width: 768px)
+{
+    .navbar {
+        margin-top: 24px
+    }
+
+    .navbar ul {
+        display: none
+    }
+
+    .search-bar {
+        margin-top: 24px
+    }
+
+    .search-bar .offer {
+        display: none;
+    }
+
+    .top-cat .product>div {
+        flex-direction: column;
+    }
+
+    .hot-sale {
+        flex-direction: column;
+    }
+
+    .hot-sale .feature {
+        width: 100%
+    }
+
+    .p-box {
+        flex-direction: column;
+    }
+
+    .gadget .container {
+        width: 100%
+    }
+
+    .gadget .container .card-box {
+        flex-direction: column;
+        margin-top: 24px
+    }
+
+    .gadget .container .card-box .card {
+        width: 92%
+    }
+
+    .trending {
+        flex-direction: column;
+    }
+
+    .trending .container {
+        width: 100%
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 24px
+    }
+
+    .bottom-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%
+    }
+}
