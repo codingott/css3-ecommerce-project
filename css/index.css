@@ -935,6 +935,10 @@ body {
     color: black
 }
 
+.top-nav .right-menu .menu-next {
+    display: none;
+}
+
 @keyframes slide-right {
     0% {
         right: -500px
@@ -1018,5 +1022,142 @@ body {
         bottom: 0;
         left: 0;
         width: 100%
+    }
+}
+
+@media(max-width: 480px) 
+{
+    .top-nav, .left-menu, .right-menu {
+        flex-direction: column;
+    }
+
+    .top-nav {
+        justify-content: start;
+        gap: 0;
+        padding: 24px
+    }
+
+    .top-nav .right-menu .menu {
+        display: none;
+    }
+
+    .top-nav .right-menu .menu-next {
+        display: block;
+        background: dodgerblue;
+        color: white;
+        text-align: center;
+        border-radius: 4px;
+        padding: 16px 0;
+        margin-top: 16px;
+        font-size: 18px
+    }
+
+    .navbar {
+        padding: 0 16px
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px
+    }
+
+    .search-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-box .category {
+        width: 100%
+    }
+
+    .header {
+        padding: 0 16px;;
+        flex-direction: column;
+    }
+
+    .header img {
+        width: 100%
+    }
+
+    .offer-showcase {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px;
+    }
+    
+    .offer-showcase img {
+        width: 100%
+    }
+
+    .top-cat {
+        padding: 0 16px;
+    }
+
+    .top-cat .product>div {
+        flex-direction: column;
+    }
+
+    .hot-sale {
+        padding: 16px
+    }
+
+    .women-clothing {
+        display: none;
+    }
+
+    .gadget .container {
+        padding: 0 16px
+    }
+
+    .gadget .container .card-box {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+        align-items: center;
+    }
+    
+    .gadget .container .card {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding-bottom: 24px;
+    }
+
+    .trending {
+        padding: 16px
+    }
+
+    .trending .container {
+        padding: 0 16px;
+    }
+
+    .trending .container .p-trending {
+        flex-direction: column;
+    }
+
+    .sponsor {
+        flex-direction: column;
+        gap: 24px
+    }
+
+    .footer {
+        padding: 16px;
+        height: auto
+    }
+
+    .footer .first, .third {
+        display: none;
+    }
+
+    .bottom-footer {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .bottom-footer>div {
+        display: none;
     }
 }
